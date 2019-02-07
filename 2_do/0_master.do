@@ -79,9 +79,8 @@ global cont_vars ///
 
 do "1_clean.do"                    // clean and prep data for analysis
 do "2_impute.do"                   // impute missing values
-do "3_characteristics.do"         // create table of summary characteristics
-do "4_know_beliefs_control.do"     // run primary models
-do "5_intentions_and_behaviors.do" //
-do "6_by_gender.do"              // run models by gender
-do "7_make_document.do"          // create document 
-* do "7_make_appendix.do"          // create appendix
+do "3_characteristics.do"          // create table of summary characteristics
+do "4_know_beliefs_control.do"     // run kab models
+do "5_intentions_and_behaviors.do" // run intentions and behaviors models
+do "6_by_gender.do"                // run models by gender
+do "7_make_document.do"            // create document 

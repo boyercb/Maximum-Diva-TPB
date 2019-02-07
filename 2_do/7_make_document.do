@@ -37,18 +37,18 @@ foreach table in `tables' {
 	
 	local j = 0
 	
-	if inlist(`i', 4, 5) {
+	if inlist(`i', 5, 6, 7, 8) {
 		local j = 1
 	}
 	
 
-	if inlist(`i', 1, 2, 3, 4, 5) {
+	if inlist(`i', 1, 2, 3, 4, 5, 6, 7, 8) {
 		putdocx table t`i'(2, .), bold border(bottom)
 	 	putdocx table t`i'(3, .), italic
 	 	putdocx table t`i'(`=15 - `j'', .), italic
 	 	putdocx table t`i'(`=22 - `j'', .), italic
 	 	putdocx table t`i'(`=26 - `j'', .), italic
-		if inlist(`i', 3, 4, 5) {
+		if inlist(`i', 3, 4, 5, 6, 7, 8) {
 		 	putdocx table t`i'(`=30 - `j'', .), italic
 		 	putdocx table t`i'(`=34 - `j'', .), italic
 		}

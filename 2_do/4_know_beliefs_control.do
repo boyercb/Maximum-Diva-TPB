@@ -82,7 +82,7 @@ foreach cov in $demo_vars $sex_vars $source_vars $sup_vars {
 		post `pf' ("Social Support") ("") ("") ("") ("") ("") ("") ("") ("") ("") ("") ("") ("") 
 	}
 
-	post `pf' ("`: variable label `cov''") ("`z_know_crude'") ("`z_know_95_crude'") ("`z_know_adj'") ("`z_know_95_adj'")///
+	post `pf' ("`: variable label `cov''") ("`z_know_crude'") ("`z_know_95_crude'") ("`z_know_adj'") ("`z_know_95_adj'") ///
 		("`z_beliefs_crude'") ("`z_beliefs_95_crude'") ("`z_beliefs_adj'") ("`z_beliefs_95_adj'") ///
 		("`z_control_crude'") ("`z_control_95_crude'") ("`z_control_adj'") ("`z_control_95_adj'")
 }
